@@ -272,8 +272,8 @@ Although LLMs’ outputs are probabilistic in nature, their related solutions an
 As we have seen in a brief practical example, setting tests that define how the output of our LLM should behave, we can follow a test-driven development. In this way, development is easier as we understand better the shortcomings, we can assure the net improvement of a given change, and we can set a quality threshold to meet.
 
 
-[1](https://temir.org/teaching/big-data-and-language-technologies-ss22/materials/701-prompt-engineering.pdf) ``` Introduction to Prompt Engineering - Temir. ```
+[1](https://temir.org/teaching/big-data-and-language-technologies-ss22/materials/701-prompt-engineering.pdf) Introduction to Prompt Engineering - Temir.
 
-[2](https://huggingface.co/datasets/squad) ``` Rajpurkar, P., Zhang, J., Lopyrev, K., & Liang, P. (2016). SQuAD: 100,000+ Questions for Machine Comprehension of Text. arXiv e-prints, arXiv:1606.05250. ```
+[2](https://huggingface.co/datasets/squad) Rajpurkar, P., Zhang, J., Lopyrev, K., & Liang, P. (2016). SQuAD: 100,000+ Questions for Machine Comprehension of Text. arXiv e-prints, arXiv:1606.05250. 
 
-[3](https://pypi.org/project/promptimize/) ```promptimize. (2021). Promptimize. PyPI.```
+[3](https://pypi.org/project/promptimize/) promptimize. (2021). Promptimize. PyPI.
