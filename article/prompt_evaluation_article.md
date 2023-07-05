@@ -83,13 +83,13 @@ sequence_matcher(answer,exact_answer[0])
 0.4406779661016949
 ```
 
-The **Jaccard similarity** coefficient, also known as the Jaccard index, is a statistic used for gauging the similarity and diversity of sample sets. It measures similarity between finite sample sets, and is defined as the size of the intersection divided by the size of the union of the sample sets. In other words, it is calculated as:
+The **Jaccard similarity** coefficient, also known as the Jaccard index, is a statistic used for gauging the similarity and diversity of sample sets. In our case, two strings. It measures similarity between finite sample sets, and is defined as the size of the intersection divided by the size of the union of the sample sets. In other words, it is calculated as:
 
 ```
 Jaccard Similarity = (number of observations in both sets) / (number in either set) or J(A, B) = |A∩B| / |A∪B|
 ```
 
-The Jaccard similarity ranges from 0 to 1. The closer to 1, the more similar the two sets of data are. If two datasets share the exact same members, their Jaccard Similarity Index will be 1. Conversely, if they have no members in common then their similarity will be 0.
+The Jaccard similarity ranges from 0 to 1. The closer to 1, the more similar the two strings. If two strings are identical, their Jaccard Similarity Index will be 1. Conversely, if they have nothing in common then their similarity will be 0.
 
 ```python
 jaccard_similarity(answer,exact_answer[0])
