@@ -66,34 +66,35 @@ def jaccard_similarity(a, b):
 ```
 [Promptimize](https://pypi.org/project/promptimize/)$^3$ is one example of many open-source tools being developed at the moment to help with prompt evaluation. It has some basic evaluation functions defined that we can use.
 
+*percentage_of_words* meassures from 0 to 1 the percentage of words from a list that are present in the given response.
+This one is our basic test, the desired answer should be included in the output.
+
 ```python
 evals.percentage_of_words(answer,exact_answer[0])
 1.0
 ```
 
-*percentage_of_words* meassures from 0 to 1 the percentage of words from a list that are present in the given response.
-This one is our basic test, the desired answer should be included in the output.
-
 **SequenceMatcher** is a class in the difflib module of Python that provides a way to compare pairs of sequences of any type, as long as the sequence elements are hashable.
+
+The idea is to find the longest contiguous matching subsequence that contains no “junk” elements (these “junk” elements are ones that are uninteresting in some sense, such as blank lines or whitespace). The same idea is then applied recursively to the pieces of the sequences to the left and to the right of the matching subsequence.
 
 ```python
 sequence_matcher(answer,exact_answer[0])
 0.4406779661016949
 ```
 
-The idea is to find the longest contiguous matching subsequence that contains no “junk” elements (these “junk” elements are ones that are uninteresting in some sense, such as blank lines or whitespace). The same idea is then applied recursively to the pieces of the sequences to the left and to the right of the matching subsequence.
-
 The **Jaccard similarity** coefficient, also known as the Jaccard index, is a statistic used for gauging the similarity and diversity of sample sets. It measures similarity between finite sample sets, and is defined as the size of the intersection divided by the size of the union of the sample sets. In other words, it is calculated as:
 
 ```
 Jaccard Similarity = (number of observations in both sets) / (number in either set) or J(A, B) = |A∩B| / |A∪B|
 ```
+
+The Jaccard similarity ranges from 0 to 1. The closer to 1, the more similar the two sets of data are. If two datasets share the exact same members, their Jaccard Similarity Index will be 1. Conversely, if they have no members in common then their similarity will be 0.
+
 ```python
 jaccard_similarity(answer,exact_answer[0])
 0.4666666666666667
 ```
-
-The Jaccard similarity ranges from 0 to 1. The closer to 1, the more similar the two sets of data are. If two datasets share the exact same members, their Jaccard Similarity Index will be 1. Conversely, if they have no members in common then their similarity will be 0.
 
 Sequence matcher and Jaccard similarity are the tests that allow us to meassure how close the output is to the desired answer. A 1 in these would mean that they are identical, but their range between 0 and 1 allow us to see progression.
 
