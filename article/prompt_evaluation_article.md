@@ -140,6 +140,7 @@ corpus[f'{VERSION}_llm_answer'] = corpus.apply(lambda row:
 After applying our tests, we have the following results:
 
 ![Alt text](image.png)
+In this table, the rows are the 3 different tests and each column represent one sample of the dataset. That is context, question, desired answer and model answer. The number is the performance of comparing desired answer and model answer with the proper row criteria.
 
 As we have seen before, the model excels at identifying the correct answer but is way too verbose. The percentage of desired words is high but the similarity of the strings is low overall.
 
