@@ -4,7 +4,7 @@ Everybody is talking about Large Language Models (LLMs) and prompt engineering. 
 
 The way we instruct them how to approach new scenarios is via prompts. [Prompt engineering](https://temir.org/teaching/big-data-and-language-technologies-ss22/materials/701-prompt-engineering.pdf)$^1$ involves designing robust instructions that efectively steer LLMs towards a desire output. It has become a new usefull skill to learn.
 
- **An important part of prompt engineering is prompt evaluation**. The enormous power of some of these models makes them an excellent out-of-the-box solution. Small tuning of hyperparameters and a clear prompt will work wonders on most use cases. However, when we implement them in the industry, we need to evaluate their performance."
+ **An important part of prompt engineering is prompt evaluation**. The enormous power of some of these models makes them an excellent out-of-the-box solution. Small tuning of hyperparameters and a clear prompt will work wonders on most use cases. However, when we implement them in the industry, we need to evaluate their performance.
 
  ## Why?
 
