@@ -179,7 +179,7 @@ corpus_v2[f'{VERSION}_llm_answer'] = corpus_v2.apply(lambda row:
   ```
 ![Alt text](image-1.png)
 
-Quite poor still.
+Quite poor still. Almost no improvement overall and even worse, in sample 18 it failed to rethrieve the correct data. Let's see why
 
 ```python
 print(f'To the question: {corpus_v2.iloc[-3]["question"]}')
