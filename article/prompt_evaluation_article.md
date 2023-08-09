@@ -96,7 +96,7 @@ jaccard_similarity(answer,exact_answer[0])
 0.4666666666666667
 ```
 
-Sequence matcher and Jaccard similarity are the tests that allow us to meassure how close the output is to the desired answer. A 1 in these would mean that they are identical, but their range between 0 and 1 allow us to see progression.
+Sequence matcher and Jaccard similarity are the tests that allow us to measure how close the output is to the desired answer. A 1 in these would mean that they are identical, but their range between 0 and 1 allow us to see progression.
 
 Out of the box, we have a model that is able to find the correct answer but is too verbose. Let’s try to improve it while testing statistically.
 
