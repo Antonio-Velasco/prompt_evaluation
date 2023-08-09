@@ -187,13 +187,14 @@ print(f'with the desired answer: {corpus_v2.iloc[-3]["answers"]}')
 print(f'Version 1 answered: {corpus_v2.iloc[-3]["ver001_llm_answer"]}')
 print(f'Version 2 answered: {corpus_v2.iloc[-3]["ver002_llm_answer"]}')
 ```
-To the question: When did Houston begin to regain its dependence on the oil industry?
+To the question: 
+`When did Houston begin to regain its dependence on the oil industry?`
 
-with the desired answer: 2000s
+with the desired answer: `2000s`
 
-Version 1 answered: Houston began to regain its dependence on the oil industry in the 2000s, specifically after the increase in oil prices during that time.
+Version 1 answered: ``Houston began to regain its dependence on the oil industry in the 2000s, specifically after the increase in oil prices during that time.``
 
-Version 2 answered: Houston began to regain its dependence on the oil industry since the increase of oil prices`
+Version 2 answered: ``Houston began to regain its dependence on the oil industry since the increase of oil prices``
 
 However, If we compare with the previous version, we can appreciate some timid progression towards concise answers:
 
@@ -253,13 +254,13 @@ print(f'Version 1 answered: {corpus_v3.iloc[0]["ver001_llm_answer"]}')
 print(f'Version 3 answered: {corpus_v3.iloc[0]["ver003_llm_answer"]}')
 ```
 
-To the question: What year was the Banská Akadémia founded?
+To the question: ``What year was the Banská Akadémia founded?``
 
-with the desired answer: 1735
+with the desired answer: ``1735``
 
-Version 1 answered: The Banská Akadémia in Banská Štiavnica, Slovakia was founded in 1735.
+Version 1 answered: ``The Banská Akadémia in Banská Štiavnica, Slovakia was founded in 1735.``
 
-Version 3 answered: 1735`
+Version 3 answered: ``1735``
 
 With a simple change in the prompt, we have greatly improved our out-of-the-box solution, and we have measurable metrics to account for it.
 
